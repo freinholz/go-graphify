@@ -7,7 +7,7 @@ import "github.com/safishamsi/graphify/go/internal/core"
 // register additional extractors (tree-sitter, LLM) on top.
 func RegisterBuiltins() {
 	Register(PythonExtractor{})
-	Register(GoExtractor{})
+	Register(GoASTExtractor{})
 	Register(JSExtractor{})
 
 	// Java-family
